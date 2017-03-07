@@ -2,20 +2,20 @@ LearnByBuildApp
 ===============
 	How to login with facebook,twitter and google in laravel parts(1-3)
 	===================================================================
-		[part( 1 ( 8:49 ))]( https://www.youtube.com/watch?v=T49xhjxFNX4 )
-		[part( 2 ( 10:35 ))]( https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s )
-		[part( 3 ( 9:57 ))]( https://www.youtube.com/watch?v=iibOAZQCmwg&t=1s )
+		[part( 1 ( 8:49 ))](https://www.youtube.com/watch?v=T49xhjxFNX4)
+		[part( 2 ( 10:35 ))](https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s)
+		[part( 3 ( 9:57 ))](https://www.youtube.com/watch?v=iibOAZQCmwg&t=1s)
 ---	
-	[facebook - 1 ( 5:20 - 8:49 )](  https://www.youtube.com/watch?v=T49xhjxFNX4 )
-	[twitter  - 2 ( 0:00 - 2:20 )](  https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s )
-	[google+  - 2 ( 2:20 - 4:24 )](  https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s )		
+	[facebook - 1 ( 5:20 - 8:49 )](https://www.youtube.com/watch?v=T49xhjxFNX4)
+	[twitter  - 2 ( 0:00 - 2:20 )](https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s)
+	[google+  - 2 ( 2:20 - 4:24 )](https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s)		
 
 
 How to login with facebook,twitter and google in laravel parts(1/3)
 ===================================================================
-	[part( 1 ( 8:49 ))]( https://www.youtube.com/watch?v=T49xhjxFNX4 )
+	[part( 1 ( 8:49 ))](https://www.youtube.com/watch?v=T49xhjxFNX4)
 ---
- [use Laravel documentation -]( https://laravel.com/docs/5.4/installation )
+ [use Laravel documentation -](https://laravel.com/docs/5.4/installation)
  
 	`cd C:\Server\data\htdocs\`
 ---
@@ -46,12 +46,12 @@ How to login with facebook,twitter and google in laravel parts(1/3)
  As we see we have `Login` and the `Register`.
 ---
  From documentation click Official Packages -> Socialite 
-	[laravel/socialite]( https://github.com/laravel/socialite )
+	[laravel/socialite](https://github.com/laravel/socialite)
 ---	
  scrolldown to the documentation, this is how to install: 
 	`composer require laravel/socialite`
 ---	
-After installing the Socialite library, register the Laravel\Socialite\SocialiteServiceProvider in your config/app.php configuration file:
+After installing the Socialite library, register the Laravel\Socialite\SocialiteServiceProvider in your `config/app.php` configuration file:
 	```php
 	'providers' => [
 		// Other service providers...
@@ -79,7 +79,7 @@ To create facebook application go to this url:
 	<https://developers.facebook.com/apps>
 ---
  Description of how to make a facebook application:	
-	[part( 1 ( 5:30 - 8:10 ))]( https://www.youtube.com/watch?v=T49xhjxFNX4	)
+	[part( 1 ( 5:30 - 8:10 ))](https://www.youtube.com/watch?v=T49xhjxFNX4)
 --- 
  - add facebook credentials to config/services.php configuration file: 
 	```php
@@ -92,12 +92,12 @@ To create facebook application go to this url:
 ---   
 How to login with facebook,twitter and google in laravel parts(2/3)
 ===================================================================
-	[part( 2 ( 10:35 ))]( https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s )
+	[part( 2 ( 10:35 ))](https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s)
 ---	
 To create twitter application visit this url:
 		<https://apps.twitter.com>
  Description of how to make a twitter application:		
-	[part( 2 ( 0:00 - 1:40 ))]( https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s) )
+	[part( 2 ( 0:00 - 1:40 ))](https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s))
 -- 
  - add twitter credentials to config/services.php configuration file:
  ```php
@@ -111,7 +111,7 @@ Let's create google application:
 	<https://console.developers.google.com>
 ---	
  Description of how to make a google application:	
-	[part( 2 ( 2:20 - 3:50 ))]( https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s )  
+	[part( 2 ( 2:20 - 3:50 ))](https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s)  
 ---
  - add google credentials to config/services.php configuration file:
  	```php
@@ -204,7 +204,7 @@ Now we need to create model with migration:
 	
 	How to login with facebook,twitter and google in laravel parts(3/3)		
 =======================================================================	
-		[part( 3 ( 9:57 ))]( https://www.youtube.com/watch?v=iibOAZQCmwg&t=1s )		
+		[part( 3 ( 9:57 ))](https://www.youtube.com/watch?v=iibOAZQCmwg&t=1s)		
 ---	
 	Now it's time to modify this function handleProviderCallback() in `RegisterController.php`.
 	```php
