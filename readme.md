@@ -2,10 +2,10 @@ LearnByBuildApp
 ===============
 	How to login with facebook,twitter and google in laravel parts(1-3)
 -----------------------------------------------------------------------	
-		[part 1 - 8:49](https://www.youtube.com/watch?v=T49xhjxFNX4)
+		[part 1](https://www.youtube.com/watch?v=T49xhjxFNX4)
 		[part( 2 ( 10:35 ))](https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s)
 		[part( 3 ( 9:57 ))](https://www.youtube.com/watch?v=iibOAZQCmwg&t=1s)
----	
+
 	[facebook - 1 ( 5:20 - 8:49 )](https://www.youtube.com/watch?v=T49xhjxFNX4)
 	[twitter  - 2 ( 0:00 - 2:20 )](https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s)
 	[google+  - 2 ( 2:20 - 4:24 )](https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s)		
