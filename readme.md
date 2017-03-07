@@ -224,13 +224,13 @@ We need a routes, copy them from laravel/socialite https://github.com/laravel/so
 
 from browser - 
 
-<localhost:8000//auth/facebook> :
+<http://localhost:8000/auth/facebook> 
 
 	- also add if there is no 'use Socialite;' in `RegisterController.php`.
 
 refresh browser
 
-<localhost:8000//auth/facebook>
+<http://localhost:8000/auth/facebook> :
 	
 	- if we get an exception:
 
@@ -251,7 +251,7 @@ Go to this url: <https://curl.haxx.se/ca/cacert.pem>
 	
 Try again, in browser:
 
-<localhost:8000//auth/facebook>
+<http://localhost:8000/auth/facebook>
 
 	
 How to login with facebook,twitter and google in laravel parts(3/3)		
@@ -294,7 +294,7 @@ How to login with facebook,twitter and google in laravel parts(3/3)
 
 Try again, in browser:
 	
-<localhost:8000//auth/facebook>
+<http://localhost:8000/auth/facebook> 
 	
 	- if we have an error:
 	
@@ -319,7 +319,7 @@ Try to login, but don't forget to clear a config cache:
 
 	refresh browser 
 	
-<localhost:8000//auth/facebook>				
+<http://localhost:8000/auth/facebook> 
 
 	- add parameter {provider} in the `routes/web.php` and include it in redirectToProvider() and handleProviderCallback(); in `RegisterController.php`.
 	
