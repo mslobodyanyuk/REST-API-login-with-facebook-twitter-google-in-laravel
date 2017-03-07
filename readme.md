@@ -65,6 +65,7 @@ Also, add the Socialite facade to the aliases array in your app configuration fi
 >These credentials should be placed in your config/services.php configuration file,
 >and should use the key facebook, twitter, linkedin, google, github or bitbucket, depending on the providers your application requires.
 >For example:
+
 ```php
 	'github' => [
 	'client_id' => 'your-github-app-id',
@@ -186,6 +187,7 @@ from browser - <localhost:8000//auth/facebook>:
 		- if we get an exception:
 >		cURL error 60: SSL...
 	Go to this url: <https://curl.haxx.se/ca/cacert.pem> 
+	
 * save the file cacert.pem.txt
 * remove the txt-extension
 * copy the file into /php/ext
@@ -202,10 +204,10 @@ from browser - <localhost:8000//auth/facebook>:
 	
 How to login with facebook,twitter and google in laravel parts(3/3)		
 =======================================================================	
-		[part( 3 ( 9:57 ))](https://www.youtube.com/watch?v=iibOAZQCmwg&t=1s)		
+part( 3 ( 9:57 ))](https://www.youtube.com/watch?v=iibOAZQCmwg&t=1s)		
 
 	Now it's time to modify this function handleProviderCallback() in `RegisterController.php`.
-	```php
+```php
 	public function handleProviderCallback()
     {
         try
@@ -234,12 +236,13 @@ How to login with facebook,twitter and google in laravel parts(3/3)
             auth()->login($user);
         return redirect('/home');
     }
-	```
+```
 	Try again, in browser:
 		<localhost:8000//auth/facebook>
 	- if we have an error:
 >		QueryException in Connection.php line 761:
 >			SQLSTATE[HYooo]: General error: 1364 Field 'password'...
+
 		- open  `config/database.php`:
 		in mysql section change 'strict'=> false, instead of true.
 ```php
@@ -250,16 +253,18 @@ How to login with facebook,twitter and google in laravel parts(3/3)
 		Try to login, but don't forget to clear a config cache:
 				`php artisan config:cache`
 				`php artisan serve`
----				
+
  refresh browser <localhost:8000//auth/facebook>.				
---- 
+
 	- add parameter {provider} in the `routes/web.php` and include it in redirectToProvider() and handleProviderCallback(); in `RegisterController.php`.
 		`routes/web.php`:
 ```php
 			Route::get('auth/{provider}', 'Auth\RegisterController@redirectToProvider');
 			Route::get('auth/{provider}/callback', 'Auth\RegisterController@handleProviderCallback');		
 ```			
+
 		`RegisterController.php`:
+		
 ```php
   public function redirectToProvider($provider) 
     {                               
