@@ -154,7 +154,7 @@ Description of how to make a google application:
 
 Now we need to create model with migration:
 
-`php artisan make model -m SocialProvider`
+`php artisan make:model -m SocialProvider`
 
 	Open the migration file and fill create fields table social_providers:
 
@@ -208,7 +208,7 @@ We need to setup the one-to-many relationship between SocialProvider and User.
 ```		
 	and paste them into `RegisterController.php`.
 
-	and let's try to print email for test in handleProviderCallback():
+	And let's try to print email for test in handleProviderCallback():
 	
 `return $user->getEmail();`
 
@@ -222,13 +222,13 @@ We need a routes, copy them from laravel/socialite https://github.com/laravel/so
 		Route::get('auth/facebook/callback', 'Auth\RegisterController@handleProviderCallback');
 ```
 
-	from browser - 
+from browser - 
 
 <localhost:8000//auth/facebook>:
 
 	- also add if there is no 'use Socialite;' in `RegisterController.php`.
 
-	refresh browser
+refresh browser
 
 <localhost:8000//auth/facebook>.
 	
@@ -292,7 +292,7 @@ How to login with facebook,twitter and google in laravel parts(3/3)
     }
 ```
 
-	Try again, in browser:
+Try again, in browser:
 	
 <localhost:8000//auth/facebook>
 	
@@ -311,7 +311,7 @@ How to login with facebook,twitter and google in laravel parts(3/3)
             'strict' => false,
 ```	
 		
-	Try to login, but don't forget to clear a config cache:
+Try to login, but don't forget to clear a config cache:
 		
 `php artisan config:cache`
 				
