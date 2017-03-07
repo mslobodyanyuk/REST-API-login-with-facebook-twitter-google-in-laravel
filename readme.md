@@ -21,7 +21,7 @@ How to login with facebook,twitter and google in laravel parts(1/3)
 ===================================================================
 [part( 1 ( 8:49 ))](https://www.youtube.com/watch?v=T49xhjxFNX4)
 
-[use Laravel documentation -](https://laravel.com/docs/5.4/installation)
+[ - use Laravel documentation ](https://laravel.com/docs/5.4/installation)
  
 `cd C:\Server\data\htdocs\`
 
@@ -87,7 +87,7 @@ Also, add the Socialite facade to the aliases array in your app configuration fi
 
 ```php
 	'github' => [
-	'client_id' => 'your-github-app-id',
+		'client_id' => 'your-github-app-id',
 		'client_secret' => 'your-github-app-secret',
 		'redirect' => 'http://your-callback-url',
 	],
@@ -122,7 +122,7 @@ To create twitter application visit this url:
 
 Description of how to make a twitter application:		
 
-[part( 2 ( 0:00 - 1:40 ))](https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s))
+[part( 2 ( 0:00 - 1:40 ))](https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s)
 
  - add twitter credentials to config/services.php configuration file:
 
@@ -215,20 +215,24 @@ We need to setup the one-to-many relationship between SocialProvider and User.
  
 We need a routes, copy them from laravel/socialite https://github.com/laravel/socialite in a `routes/web.php` and edit:
 
->	- just change 'github' to 'facebook' and 'Auth\' to 'RegisterController'
+	- just change 'github' to 'facebook' and 'Auth\' to 'RegisterController'
 
 ```php
 		Route::get('auth/facebook', 'Auth\RegisterController@redirectToProvider');
 		Route::get('auth/facebook/callback', 'Auth\RegisterController@handleProviderCallback');
 ```
 
-from browser - <localhost:8000//auth/facebook>:
+	from browser - 
+
+<localhost:8000//auth/facebook>:
 
 	- also add if there is no 'use Socialite;' in `RegisterController.php`.
 
-	refresh browser <localhost:8000//auth/facebook>.
+	refresh browser
+
+<localhost:8000//auth/facebook>.
 	
-		- if we get an exception:
+	- if we get an exception:
 
 >		cURL error 60: SSL...
 
@@ -245,9 +249,9 @@ Go to this url: <https://curl.haxx.se/ca/cacert.pem>
 * save the php.ini and restart the Apache.
 * and restart the Laravel server to.
 	
-	Try again, in browser:
+Try again, in browser:
 
-	<localhost:8000//auth/facebook>
+<localhost:8000//auth/facebook>
 
 	
 How to login with facebook,twitter and google in laravel parts(3/3)		
@@ -290,7 +294,7 @@ How to login with facebook,twitter and google in laravel parts(3/3)
 
 	Try again, in browser:
 	
-		<localhost:8000//auth/facebook>
+<localhost:8000//auth/facebook>
 	
 	- if we have an error:
 	
@@ -305,18 +309,21 @@ How to login with facebook,twitter and google in laravel parts(3/3)
 		'mysql' => [
             ...
             'strict' => false,
-```			
-		Try to login, but don't forget to clear a config cache:
+```	
 		
-				`php artisan config:cache`
+	Try to login, but don't forget to clear a config cache:
+		
+`php artisan config:cache`
 				
-				`php artisan serve`
+`php artisan serve`
 
- refresh browser <localhost:8000//auth/facebook>.				
+	refresh browser 
+	
+<localhost:8000//auth/facebook>.				
 
 	- add parameter {provider} in the `routes/web.php` and include it in redirectToProvider() and handleProviderCallback(); in `RegisterController.php`.
 	
-		`routes/web.php`:
+`routes/web.php`:
 
 ```php
 			Route::get('auth/{provider}', 'Auth\RegisterController@redirectToProvider');
