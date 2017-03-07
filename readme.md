@@ -1,32 +1,32 @@
 LearnByBuildApp 
 ===============
-	How to login with facebook,twitter and google in laravel parts(1-3)
+How to login with facebook,twitter and google in laravel parts(1-3)
 -----------------------------------------------------------------------	
-		[part 1](https://www.youtube.com/watch?v=T49xhjxFNX4)
-		[part( 2 ( 10:35 ))](https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s)
-		[part( 3 ( 9:57 ))](https://www.youtube.com/watch?v=iibOAZQCmwg&t=1s)
+[part 1](https://www.youtube.com/watch?v=T49xhjxFNX4)
+[part( 2 ( 10:35 ))](https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s)
+[part( 3 ( 9:57 ))](https://www.youtube.com/watch?v=iibOAZQCmwg&t=1s)
 
-	[facebook - 1 ( 5:20 - 8:49 )](https://www.youtube.com/watch?v=T49xhjxFNX4)
-	[twitter  - 2 ( 0:00 - 2:20 )](https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s)
-	[google+  - 2 ( 2:20 - 4:24 )](https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s)		
+[facebook - 1 ( 5:20 - 8:49 )](https://www.youtube.com/watch?v=T49xhjxFNX4)
+[twitter  - 2 ( 0:00 - 2:20 )](https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s)
+[google+  - 2 ( 2:20 - 4:24 )](https://www.youtube.com/watch?v=JUylqh07Dgc&t=4s)		
 
 
 How to login with facebook,twitter and google in laravel parts(1/3)
 ===================================================================
-	[part( 1 ( 8:49 ))](https://www.youtube.com/watch?v=T49xhjxFNX4)
+[part( 1 ( 8:49 ))](https://www.youtube.com/watch?v=T49xhjxFNX4)
 ---
- [use Laravel documentation -](https://laravel.com/docs/5.4/installation)
+[use Laravel documentation -](https://laravel.com/docs/5.4/installation)
  
 	`cd C:\Server\data\htdocs\`
 ---
- `composer create-project --prefer-dist laravel/laravel multi-providers`
+	`composer create-project --prefer-dist laravel/laravel multi-providers`
 ---
 	`cd multi-providers`
 ---
- Run Laravel server:
+Run Laravel server:
 	`php artisan serve`
 ---	
- Trying browser, in address line:
+Trying browser, in address line:
 	<http://localhost:8000>
 ---
  Now we need to do some database configuratuion in file settings `.env `
